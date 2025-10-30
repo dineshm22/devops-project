@@ -8,7 +8,7 @@ resource "docker_service" "app_service" {
 
   task_spec {
     container_spec {
-      image = docker_image.app_image.id
+      image = docker_image.app_image.name
     }
   }
 
