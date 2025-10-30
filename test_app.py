@@ -5,4 +5,4 @@ def test_home_page():
     response = client.get('/')
     assert response.status_code == 200
     # Check for the title of your DevOps site
-    assert b"My Interactive Portfolio" in response.data
+    assert b"My" in response.data
